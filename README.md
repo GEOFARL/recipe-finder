@@ -8,12 +8,12 @@ A **Next.js** app to search, filter, and view recipe details using the Spoonacul
 
 ## Features
 
-Search recipes by name, cuisine, and prep time  
-View recipe details (ingredients, summary)  
-Skeleton loaders for smooth UX  
-Caching (1 min) for performance  
-Error handling for failed API requests  
-Fully responsive design
+- Search recipes by name, cuisine, and prep time
+- View recipe details (ingredients, summary)
+- Skeleton loaders for smooth UX
+- Caching (1 min) for performance
+- Error handling for failed API requests
+- Fully responsive design
 
 ## Tech Stack
 
