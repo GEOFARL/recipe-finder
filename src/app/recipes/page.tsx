@@ -15,11 +15,15 @@ export default async function RecipesPage({
     <div className="p-6">
       <h1 className="text-2xl font-bold mb-4">Recipes</h1>
       <Suspense fallback={<p>Loading recipes...</p>}>
-        <RecipeList>
-          {data.map((recipe) => (
-            <RecipeComponent key={recipe.id} recipe={recipe} />
-          ))}
-        </RecipeList>
+        {data.length > 0 ? (
+          <RecipeList>
+            {data.map((recipe) => (
+              <RecipeComponent key={recipe.id} recipe={recipe} />
+            ))}
+          </RecipeList>
+        ) : (
+          <p>No Recipes Found</p>
+        )}
       </Suspense>
     </div>
   );

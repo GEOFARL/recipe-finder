@@ -32,9 +32,11 @@ const RecipeForm: React.FC = () => {
         className="border p-2 rounded w-full"
       >
         <option value="">Select Cuisine</option>
-        <option value="Italian">Italian</option>
-        <option value="Mexican">Mexican</option>
-        <option value="Chinese">Chinese</option>
+        {CUISINES.map((cuisine, idx) => (
+          <option value={cuisine} key={idx}>
+            {cuisine}
+          </option>
+        ))}
       </select>
       <input
         type="number"
@@ -55,3 +57,33 @@ const RecipeForm: React.FC = () => {
 };
 
 export default RecipeForm;
+
+const CUISINES = [
+  'African',
+  'Asian',
+  'American',
+  'British',
+  'Cajun',
+  'Caribbean',
+  'Chinese',
+  'Eastern European',
+  'European',
+  'French',
+  'German',
+  'Greek',
+  'Indian',
+  'Irish',
+  'Italian',
+  'Japanese',
+  'Jewish',
+  'Korean',
+  'Latin American',
+  'Mediterranean',
+  'Mexican',
+  'Middle Eastern',
+  'Nordic',
+  'Southern',
+  'Spanish',
+  'Thai',
+  'Vietnamese',
+];
