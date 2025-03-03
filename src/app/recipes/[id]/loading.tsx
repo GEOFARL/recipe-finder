@@ -6,10 +6,7 @@ const LoadingRecipeDetails: React.FC = () => {
       <h2 className="text-xl font-semibold mt-6">Ingredients</h2>
       <ul className="mt-2 space-y-2">
         {Array.from({ length: 14 }).map((_, index) => (
-          <li
-            key={index}
-            className="h-5 w-1/3 bg-gray-300 rounded animate-pulse"
-          ></li>
+          <li key={index} className="h-5 w-1/3 bg-gray-300 rounded animate-pulse"></li>
         ))}
       </ul>
 

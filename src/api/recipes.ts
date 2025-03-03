@@ -14,20 +14,15 @@ export const fetchRecipes = async (
     return MOCK_RECIPES.results;
   }
 
-  const { data } = await apiClient.get<{ results: Recipe[] }>(
-    '/complexSearch',
-    {
-      params: { query, cuisine, maxReadyTime },
-      cache: { ttl: 60 * 1000 },
-    }
-  );
+  const { data } = await apiClient.get<{ results: Recipe[] }>('/complexSearch', {
+    params: { query, cuisine, maxReadyTime },
+    cache: { ttl: 60 * 1000 },
+  });
 
   return data.results;
 };
 
-export const fetchRecipeDetails = async (
-  id: string
-): Promise<RecipeDetails> => {
+export const fetchRecipeDetails = async (id: string): Promise<RecipeDetails> => {
   if (process.env.NODE_ENV === 'development') {
     await new Promise((resolve) => setTimeout(resolve, 2000));
     return MOCK_DETAILS;

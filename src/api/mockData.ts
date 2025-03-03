@@ -73,8 +73,7 @@ export const MOCK_DETAILS = {
   title: 'Baked Ravioli & Meat Sauce',
   readyInMinutes: 45,
   servings: 8,
-  sourceUrl:
-    'https://www.foodista.com/recipe/PKJT7TDN/baked-ravioli-meat-sauce',
+  sourceUrl: 'https://www.foodista.com/recipe/PKJT7TDN/baked-ravioli-meat-sauce',
   vegetarian: false,
   vegan: false,
   glutenFree: false,
@@ -117,8 +116,7 @@ export const MOCK_DETAILS = {
       name: 'bell pepper',
       nameClean: 'green pepper',
       original: '1 Green Pepper, thinly sliced and cut into 1-inch long strips',
-      originalName:
-        'Green Pepper, thinly sliced and cut into 1-inch long strips',
+      originalName: 'Green Pepper, thinly sliced and cut into 1-inch long strips',
       amount: 1,
       unit: '',
       meta: [Array],
@@ -189,8 +187,7 @@ export const MOCK_DETAILS = {
       nameClean: 'italian seasoning',
       original:
         "2 teaspoons tablespoons Italian Seasoning (If you don't have the mix use 1 each of",
-      originalName:
-        "tablespoons Italian Seasoning (If you don't have the mix use 1 each of",
+      originalName: "tablespoons Italian Seasoning (If you don't have the mix use 1 each of",
       amount: 2,
       unit: 'teaspoons',
       meta: [Array],
@@ -312,6 +309,5 @@ export const MOCK_DETAILS = {
   analyzedInstructions: [{ name: '', steps: [Array] }],
   originalId: null,
   spoonacularScore: 50.98750686645508,
-  spoonacularSourceUrl:
-    'https://spoonacular.com/baked-ravioli-meat-sauce-633752',
+  spoonacularSourceUrl: 'https://spoonacular.com/baked-ravioli-meat-sauce-633752',
 };

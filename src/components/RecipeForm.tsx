@@ -18,10 +18,7 @@ const RecipeForm: React.FC = () => {
     router.push(`/recipes?${params.toString()}`);
   };
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="bg-white p-6 rounded shadow-lg space-y-4"
-    >
+    <form onSubmit={handleSubmit} className="bg-white p-6 rounded shadow-lg space-y-4">
       <input
         type="text"
         placeholder="Search for a recipe..."
