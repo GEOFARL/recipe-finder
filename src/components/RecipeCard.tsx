@@ -5,7 +5,7 @@ type Props = {
   recipe: RecipeType;
 };
 
-const Recipe: React.FC<Props> = ({ recipe }) => {
+const RecipeCard: React.FC<Props> = ({ recipe }) => {
   return (
     <Link
       key={recipe.id}
@@ -22,4 +22,4 @@ const Recipe: React.FC<Props> = ({ recipe }) => {
   );
 };
 
-export default Recipe;
+export default RecipeCard;

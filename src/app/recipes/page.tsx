@@ -1,5 +1,5 @@
 import { fetchRecipes } from '@/api/recipes';
-import RecipeComponent from '@/components/Recipe';
+import RecipeComponent from '@/components/RecipeCard';
 import { Suspense } from 'react';
 
 export default async function RecipesPage({
